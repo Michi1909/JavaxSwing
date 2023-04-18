@@ -1,4 +1,5 @@
 import javax.swing. *;
+import java.util.Formatter;
 
 public class Menu {
     public static void main(String [] args){
@@ -32,8 +33,9 @@ public class Menu {
                     break;
 
                 case 5:
-                    int number = m.berechneErscheinungsjahr();
-                    System.out.println(number);
+                    Formatter f = new Formatter();
+                    f.format("%d Average Year",m.berechneErscheinungsjahr());
+                    JOptionPane.showMessageDialog(null, f);
                     break;
 
                 case 6:
