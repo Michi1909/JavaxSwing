@@ -15,16 +15,8 @@ public class Audio extends Medium {
         return interpret;
     }
 
-    public void setInterpret(String interpret) {
-        this.interpret = interpret;
-    }
-
     public int getDauer() {
         return dauer;
-    }
-
-    public void setDauer(int dauer) {
-        this.dauer = dauer;
     }
 
     @Override

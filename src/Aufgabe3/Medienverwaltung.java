@@ -3,9 +3,8 @@ import java.util.Collections;
 import java.util.List;
 
 public class Medienverwaltung{
-    int anzahl= 0;
-    Medium m;
-    List<Medium> mediumverwaltung;
+    private int anzahl= 0;
+    private final List<Medium> mediumverwaltung;
 
     public Medienverwaltung(){
         this.mediumverwaltung= new ArrayList<>();

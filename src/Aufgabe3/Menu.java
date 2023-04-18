@@ -1,6 +1,10 @@
 import javax.swing. *;
 import java.util.Formatter;
 
+/**
+ * Print and manage the methodes from the menue
+ * @author Ella Kaiser
+ */
 public class Menu {
     public static void main(String [] args){
         Medienverwaltung m = new Medienverwaltung();
@@ -8,6 +12,10 @@ public class Menu {
 
     }
 
+    /**
+     * Switch Case selected the Input in Menue
+     * @param m Generic List of Medium
+     */
     public static void menueCreate(Medienverwaltung m){
         boolean running = true;
         while (running) {
@@ -50,6 +58,11 @@ public class Menu {
         JOptionPane.showMessageDialog(null, "Programm beendet.");
 
     }
+
+    /**
+     * Print menue in JOptionPane
+     * @return the input in the menue
+     */
     public static int menueOutputInput(){
         int option = 0;
         String input = JOptionPane.showInputDialog("Bitte wählen Sie eine Option aus:\n"
@@ -66,6 +79,11 @@ public class Menu {
         }
         return option;
     }
+
+    /**
+     * add an Audio in the Generic list of Medium
+     * @param m generic list of Medium
+     */
     public static void audioAufnehmen(Medienverwaltung m){
         String titel = JOptionPane.showInputDialog("Bitte geben Sie den Titel des Audios ein:");
         String interpret = JOptionPane.showInputDialog("Bitte geben Sie den Künstler des Audios ein:");
@@ -74,6 +92,11 @@ public class Menu {
         Audio audio = new Audio( titel, jahr,interpret, dauer);
         m.aufnehmen(audio);
     }
+
+    /**
+     * add a picture in the generic list of medium
+     * @param m generic list of medium
+     */
     public static void bildAufnehmen(Medienverwaltung m){
         String titel = JOptionPane.showInputDialog("Bitte geben Sie den Titel des Bildes ein:");
         String ort = JOptionPane.showInputDialog("Bitte geben Sie den Ort der Aufnahme ein:");

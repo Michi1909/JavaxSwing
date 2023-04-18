@@ -12,10 +12,6 @@ public class Bild extends Medium {
         return ort;
     }
 
-    public void setOrt(String ort) {
-        this.ort = ort;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (!super.equals(o))
