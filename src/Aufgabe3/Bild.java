@@ -1,5 +1,9 @@
 import java.util.Objects;
 
+/**
+ * Bild extends from Medium and save Pictures with Details(title, year and location)
+ * @author Ella Kaiser
+ */
 public class Bild extends Medium {
     private String ort;
 

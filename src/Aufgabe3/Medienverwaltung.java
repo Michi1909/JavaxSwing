@@ -2,6 +2,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * Mediumverwaltung save all Mediums in an ArrayList
+ * @author Ella Kaiser
+ */
 public class Medienverwaltung{
     private int anzahl= 0;
     private final List<Medium> mediumverwaltung;
